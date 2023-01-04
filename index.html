@@ -14,19 +14,19 @@
         <label>
             <input type="search" placeholder="Поиск.." id="inputSearchPanel">
         </label>
-        <div class="found-search">
+        <div id="foundSearching" class="found-search display-none">
             <h4>Найдено</h4>
             <p id="switchResult">0</p>
             <p>/</p>
             <p id="allSearchResult">0</p>
-            <button>Вверх</button>
-            <button>Вниз</button>
+            <button id="select-prev">Вверх</button>
+            <button id="select-next">Вниз</button>
         </div>
     </div>
 
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row" id="items">
         <div class="cards">
             <h3>Гармония</h3>
             <p>21233</p>
