@@ -20,7 +20,7 @@
 }
 
 .search-result {
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     background: antiquewhite;
 }
 
@@ -35,6 +35,7 @@
     width: 200px;
 }
 
+/*Классы которые нужны будут*/
 .active {
     border: 1px solid red;
 }
