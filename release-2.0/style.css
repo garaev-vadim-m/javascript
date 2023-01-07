@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    background-color: #dadada;
+}
+
+.content {
+    position: fixed;
+    top: 3em;
+    bottom: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.highlight.current {
+    background-color: #8BC34A;
+}
