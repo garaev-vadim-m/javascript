@@ -40,6 +40,10 @@ window.onload = () => {
                         index = (index + list.length + 1) % list.length;
                         list[index].classList.add('active');
 
+                        let activeViewScroll = document.querySelector('.search-result.active');
+
+                        activeViewScroll.scrollIntoView({block: "center", behavior: "smooth"});
+
                         document.getElementById('switchResult').innerHTML = index + 1;
                     };
 
@@ -53,8 +57,13 @@ window.onload = () => {
                         index = (index + list.length - 1) % list.length;
                         list[index].classList.add('active');
 
+                        let activeViewScroll = document.querySelector('.search-result.active');
+
+                        activeViewScroll.scrollIntoView({block: "center", behavior: "smooth"});
+
                         document.getElementById('switchResult').innerHTML = index + 1;
                     };
+
 
                     document.getElementById('select-next').addEventListener('click', () => {
                         nextElement()

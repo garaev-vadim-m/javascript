@@ -3,9 +3,9 @@
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
 
 .cards {
@@ -19,13 +19,18 @@
     height: 30px;
 }
 
+.search-panel {
+    position: sticky;
+    top: 0;
+}
+
 .search-result {
     transition: all 0.3s ease;
     background: antiquewhite;
 }
 
 .search-result-remove {
-    /*display: none;*/
+    display: none;
 }
 
 .found-search {
