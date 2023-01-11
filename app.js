@@ -7,13 +7,13 @@ window.onload = () => {
 
     searchPanel.oninput = function () {
 
-        const value = this.value.trim();
+        const value = this.value.trim().toLowerCase();
         const cards = document.querySelectorAll('.cards');
 
         if (value) {
             cards.forEach(element => {
 
-                if (element.innerText.search(value) !== -1) {
+                if (element.innerText.toLowerCase().search(value) !== -1) {
                     if (value.length > 2) {
                         element.classList.add('search-result');
                         document.getElementById('foundSearching').classList.remove('display-none');
@@ -42,7 +42,7 @@ window.onload = () => {
 
                         let activeViewScroll = document.querySelector('.search-result.active');
 
-                        activeViewScroll.scrollIntoView({block: "center", behavior: "smooth"});
+                        activeViewScroll.scrollIntoView(true);
 
                         document.getElementById('switchResult').innerHTML = index + 1;
                     };
@@ -59,7 +59,7 @@ window.onload = () => {
 
                         let activeViewScroll = document.querySelector('.search-result.active');
 
-                        activeViewScroll.scrollIntoView({block: "center", behavior: "smooth"});
+                        activeViewScroll.scrollIntoView(true);
 
                         document.getElementById('switchResult').innerHTML = index + 1;
                     };
